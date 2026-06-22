@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>balbu.test</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+     background-image: url('x.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color: rgba(255, 255, 255, 0.146);
+      height: 100vh;
+    }
+
+    .container {
+      background: rgba(170, 170, 169, 0.164);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width:150%;
+      max-width: 500px;
+    }
+
+    .container h1 {
+      font-size: 24px;
+      color: #ffffffed;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+        
+      display: block;
+      width: 100%;
+      padding: 15px 50px;
+      margin: 12px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ececec;
+      background-color: #41464c;
+      border: 5px;
+      border-radius: 16px;
+      transition: background-color 0.5s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #00000070;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-button {
+      background-color: #93918838;
+      color: rgba(248, 247, 245, 0.819);
+      padding: 20px 30px;
+      font-size: 35px;
+      border: none;
+      cursor: pointer;
+      border-radius: 16px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 6px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 20px 25px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+   
+
+    .dropdown:hover .dropdown-button {
+      background-color: #1a435f;
+      transition: background-color 0.5s ease;
+      width: 100%;
+    }
+    .texto-derecha {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      max-width: 300px;
+      background-color: #b5373715;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(55, 39, 39, 0.1);
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+   <div class="texto-derecha">
+    <strong>*Justicia*</strong><br>
+    *El éxito es el resultado de la preparación, la oportunidad y la acción. Sin preparación y esfuerzo, las oportunidades no pueden ser aprovechadas al máximo.*
+  </div>
+  <br>
+  <br>
+  <div class="dropdown">
+    <button class="dropdown-button">Seleccione su test</button>
+    <div class="dropdown-content">
+      <div class="container">
+    <h1>Selecciona test</h1>
+    <button class="btn" onclick="redirigir('test tema 1 CE+/index.html')">1- CE</button>
+    <button class="btn" onclick="redirigir('test tema 2 IHUALDAD/index.html')">2- IGUALDAD</button>
+    <button class="btn" onclick="redirigir('test tema 3 GOBIERNO Y ADMIN+/index.html')">3- GOBIERNO Y ADMI</button>
+    <button class="btn" onclick="redirigir('test tema 4 ORGANIZACION/index.html')">4- ORGANIZACION</button>
+    <button class="btn" onclick="redirigir('test tema 5 UNION EU/index.html')">5- UE</button>
+    <button class="btn" onclick="redirigir('test tema 6 PODER JUDICIAL/index.html')">6- PODER JUDICIAL</button>
+    <button class="btn" onclick="redirigir('test tema 7 TSJ AN TS/index.html')">7- TSJ Y TS</button>
+    <button class="btn" onclick="redirigir('test tema 8 JUZGADOS/index.html')">8- JUZGADOS</button>
+    <button class="btn" onclick="redirigir('test tema 9 DERECHOS DE LA CARTA/index.html')">9- LA CARTA </button>
+    <button class="btn" onclick="redirigir('test tema 10 OFICINA JUDICIAL/index.html')">10- OFICINA JUDICIAL</button>
+    <button class="btn" onclick="redirigir('test tema 11 EL LETRADO/index.html')">11- EL LETRADO</button>
+    <!-- <button class="btn" onclick="redirigir('test tema 12 CUERPOS DE FUNCIONARIOS/index.html')">tema 12</button> -->
+    <button class="btn" onclick="redirigir('test tema 13 CUERPOS GENERALES 2/index.html')">13- CUERPOS GENERALES 1 Y 2</button>
+    <button class="btn" onclick="redirigir('test tema 14 CUERPOS GENERALES+/index.html')">14- CUERPOS GENERALES</button>
+    <button class="btn" onclick="redirigir('test tema 15 LIBERTAD SINDICAL/index.html')">15- LIBERTAD SINDICAL</button>
+    <button class="btn" onclick="redirigir('test tema 16 juicio ordinario o verbal/index.html')">16- LEC</button>
+    <button class="btn" onclick="redirigir('test tema 17/index.html')">tema 17</button>
+    <button class="btn" onclick="redirigir('test tema 18/index.html')">tema 18</button>
+    <button class="btn" onclick="redirigir('test tema 19/index.html')">tema 19</button>
+    <button class="btn" onclick="redirigir('test tema 20/index.html')">20- LECRIM </button>
+    <button class="btn" onclick="redirigir('test tema 21 DELITO LEVE/index.html')">21-  </button>
+    <button class="btn" onclick="redirigir('test tema 28 lec+/index.html')">tema 28 *</button>
+    <button class="btn" onclick="redirigir('supuestos/home.html')">SUPUESTOS</button>
+    <button class="btn" onclick="redirigir('test ya mezclados/index.html')">test mezclados</button>
+    <button class="btn" onclick="redirigir('TEST DE EXAMEN/index.html')">TEST DE EXAMEN</button>
+  </div>
+</div>
+</div>
+  </div>
+  <script>
+    function redirigir(nombreArchivo) {
+      window.location.href = nombreArchivo;
+    }
+</Script>
+<footer
+      style="
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0); /* completamente transparente */
+        text-align: center;
+        padding: 15px;
+        font-size: 0.85rem;
+        color: #fbfbfb;
+        z-index: 999;
+      "
+    >
+      &copy; 2025 Test de Oposiciones. Todos los derechos reservados.
+
+</body>
+</html>

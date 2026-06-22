@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supuesto 2</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - SEGUNDO CASO PRACTICO- <br>
+      Doña Penelope Glamour Peña, de 30 años de edad, con DNI 12345678-L y domicilio en Sitges(barcelona) interpone demanda 
+      contra el fotografo Don Pepe Paparazzi Lopez, con DNI 09876543-M, de 45 años de edad, con domicilio en Mostoles(Madrid) por, 
+      supuestamente, atentar contra sun intimidad tomando fotografias de esta sin su consentimiento cuando se hayaban en la via
+      publica en la calle Gran Via, de Madrid capital acompañada de su pareja sentimental, Don Rodrigo Vividor Sanches, de 35 años de edad,
+      con DNI 10293847-M y domicilio en Madrid ,y algunos amigos de ambos, que iba acompañados de estos de su hija menor, de 6 años de edad.
+      Durante la toma de las instantaneas, se produce una fuerte discusion entre ambos y la pareja de esta, que evitaron los amigos de la pareja.
+      En el forcejeo, se rompio el objetivo del fotografo valorado en 4000 eu. La famosa actriz reclama al fotografo la entrega de los negativos digitales,
+      la destruccion de todas las copuias digitales e impresas y el y el pago de una indemnizacion de 6000 eu en concepto en reparacion de daños y perjuicio
+    </div>
+    <div class="container">
+      <h1>supuesto 1</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+  </body>
+</html>

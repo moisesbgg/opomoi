@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supuesto 7</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      -HERENCIA- <br>
+    En la villa de Pedraza , siendo la 10:00 horas del dia 20 de mayo de 2009 , se constituye la comision judicial del juzgado de 1 instancia e instruccion de Sepulveda, compuesta por el funcionario del cuerpo de auxilio judicial
+    y el LAJ, en el domicilio sito en la calle la Luz n25 y en el que residia D. Pedro Gomez de Mendoza , fallecido en la villa el pasado dia 8 de los corrientes, sin haber otorgado testamento y sin que conste la exigencia de parientes 
+    y sin que conste la existencia de parientes conocidos llamados por ley a su sucesion. A la comision judicial le acompaña D Matias de la Serna Rodriguez , mayor de edad , con DNI 123456790 y con domicilio en la calle Antunez n28 de esta villa , persona que la ç
+    a sido designada al objeto de que garantice el inventario y deposito de los bienes del firmado.
+    Una vez ubicados en el interior del domicilio que fue del fallecido se procede a iocupar , de conformidad con lo dispuesto en el ar 791 de la ley 1/2000, de 7 de enero , de enjuiciamiento civil, los ---------. procediendose , a intervenir los bienes del fallecido que resulten 
+    ser: <br>
+    a. un televisor de plasma de 42` sony <br>
+    b. un lector de dvd sony<br>
+    c. un equipo de sonido tecnis<br>
+    d. lavadora , lavavajillas y frigorifico siemens<br>
+    e. una litografia de Dali<br>
+    f. un reloj de oro rolex <br>
+    g. un vehiculo de la marca mercedes , modelo a-180 , matricula 5730 DVJ que se encuentra en el garaje de la vivienda<br>
+    h. un dormitorio completo estilo luis XV, compuesto por un cabecero , dos mesitas de noche y una comoda en buen estado<br>
+    Una vez llevado a cabo el inventario se requiere a D Matias a fin de que garantice el mismo y el deposito de los bienes en el reseñado , manifestando el citado que acepta el cargo para el que a sido designada y asume la custodia de los bienes que constan en el inventario . los cuales permaneceran en el domicilio 
+    del fallecido a disposicion del tribunal, haciendose cargo en este acto de las llaves del domicilio . Enterado de todo ello se levanta la presente que , leida y hallada conforme por los comparecientes es firmada por ----------
+    </div>
+    <div class="container">
+      <h1>Herencia</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

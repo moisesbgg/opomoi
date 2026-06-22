@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supuesto 5</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - QUINTO CASO- <br>
+     Jose Martin , con domicilio en ciudad real , calle mayor n23, es propietario de una vivienda sita en la calle Pensamiento n3 de la localidad de puertollano.<br>
+     Con fecha 1 de enero de 2014 suscribio su contrato de arrendamiento referido a dicha vivienda con Marta Garcia firmando tambien el contrato Pedro Perez, quien se obligo a cumplir las obligaciones derivadas del contrato en calidad de fiador.
+     En el contrato , Marta designo , a efectos de notificaciones , su domicilio laboral sito en Ciudad Real . el importe mensual es de 700$<br>
+     En el mes de febrero de 2015 Marta dejo de abonar las rentas y cantidades asimiladas y ante dicha circunstancia, el arrendador Jose Martin , con fecha 15 de mayo de 2016, dirigio un requerimiento de pago mediante burofax tanto a Marta como Pedro concediendole un plazo de 7 dias 
+     para ponerse al corriente. Transcurridos ese plazo y no atendiendo al requerimiento , el 30 de enero de 2016, Jose presento una demanda ejercitando la accion de desahucio y reclamando las cantidades adeudadas. el juicio se celebro con la asistencia de todas las partes y se dicto sentencia estimatoria
+    </div>
+    <div class="container">
+      <h1>supuesto 5</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

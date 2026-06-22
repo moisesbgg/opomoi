@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BATMAN PA</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - septimo CASO- <br>
+    Se inician actuaciones de caracter penal en virtud de una demanda formulada por D. Rodrigo Ruiz, por el robo en el establecimiento abierto al publico (pena de 2 a 5 años de prision) de su propiedad, por la desaparicion de diversas mercancias, atribuyendo tal hecho "al Joker". 
+    En el transcurso de la investigacion , Batman encuentra las mercancias en un almacen propiedad del joker, cuando la policia va a proceder a la detencion, el mismo no se encuentra en su domicilio  
+    </div>
+    <div class="container">
+      <h1>BATMAN PA</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

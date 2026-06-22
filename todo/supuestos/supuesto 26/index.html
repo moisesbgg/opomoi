@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOCIAL </title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      -  SOCIAL- <br>
+F.R.U msyor de edad con domicilio en Navalcarnero , interpone demanda en materia de despido contra la empresa "USPISA S.L" dedicada a la actividad de limpieza de vehiculos en un garage sito en Talavera de la Reina y con domicilio a efectos de 
+notificacion en la calle Ledesma nº5 de Madrid , que debera ser citada en la persona de su legal representante 
+en base a los siguientes hechos : Que , desde el 2 de febrero de 2019 presta servicio de forma ininterrumpidas en la empresa demandada "USPISA S.L" desempeñando trabajos de limpieza de coches con la categoria de ayudantes , en jornada de 30 horas 
+semanales de lunes a viernes , perciviendo la suma de 1325 ue mensuales , incluidos el prorrateo de pagas extraordinarias . El dia 15 de noviembre de 2022 le fue entregada la carta de despido , indicando el empresario que debia abandonar de forma inmediata las instalaciones de la emoresa alegando " la disminucion continuada y voluntaria en el rendimiento de trabajo normal o pactado". Por o que , condiderando injustificada la causa del despido alegada 
+, solicita al juzgado , tras los tramites pertinentes , se dicte sentencia declarando improcedente el despido y se lo abonen los salarios dejados de percibir desde la fecha de despido 
+    </div>
+    <div class="container">
+      <h1>SOCIAL</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

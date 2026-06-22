@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ordinario penal</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - Penal ordinario- <br>
+  El 16 de octubre de 2016 ,Don Eloy de la Iglesia , antural de Placencia Caceres se dirigio a la vivienda de Don Manzano , sita en el municipio de Trujillo Caceres con un cuchillo de grandes dimensiones 
+  para exigir a este el pago de unas papelinas de heroina que el señor de la Iglesia le habria proporcionado en una ocasion anterior . Cuando el señor de la Iglesia le exigio el pago de las sustancias , Manzano alego que 
+  no tenia dinero y le entrego dos papelinas y 28 euros , indicando que era lo que tenia
+  Sin embargo , el señor de la Iglesia encuentra insuficiente el pago y se abalanza sobre este y le propina un corte profundo en un costado que le afecto a la pleura y que supuso un potencial peligro de vida requiriendo para ello
+  un tratamiento quirurgico e ingreso hospitalario de 21 dias.
+  El fiscal pide 9 años y tres meses de prision al acusado por un delito de robo con violencia y otro de tentativa de homicidio , con la concurrencia de circunstancia modificadas de la responsabilidad criminal agravante de reincidencia
+  y atenuante de drogadiccion . En concepto de responsabilidad civil, se le exige al acusado 10000 eu. 
+  Ademas, el acusado tiene antecedentes penales computables a efectos de reincidencia por un delito de maltrato continuo hacia su esposa, por el que fue condenado a 3 años de prision en 2012 
+    </div>
+    <div class="container">
+      <h1>supuesto 7</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Selector de Scripts - Empresa XYZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+     background-image: url('5.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color: rgba(255, 255, 255, 0.146);
+      height: 100vh;
+    }
+
+    .container {
+      background: rgba(170, 170, 169, 0.164);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .container h1 {
+      font-size: 24px;
+      color: #775b05ed;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      margin: 12px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #0056b3;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #003f80;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Selecciona test de CE </h1>
+    <button class="btn" onclick="redirigir('ce/index.html')">test 1</button>
+    <button class="btn" onclick="redirigir('ce1/index.html')">test 2</button>
+    <button class="btn" onclick="redirigir('ce2/index.html')">test 3</button>
+  </div>
+
+  <script>
+    function redirigir(nombreArchivo) {
+      window.location.href = nombreArchivo;
+    }
+  </script>
+
+</body>
+</html>

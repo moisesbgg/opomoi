@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temas Procesamiento y Auxilio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-image: url('f.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #d4af37;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem 4rem;
+}
+
+.book {
+  background-color: rgba(26, 26, 26, 0.9);
+  border: 2px solid #2c2c2c;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  backdrop-filter: blur(4px);
+}
+
+/* hover correcto */
+.book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+  border-color: #d4af37;
+}
+
+.book::before {
+  content: "📘";
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  color: #d4af37;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ccc;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Test Procesamiento y Auxilio</h1>
+  <p style="color: #ccc;">Accede al contenido de cada tema como si fuera un libro 📘</p>
+</header>
+
+<div class="grid">
+
+  <div class="book" onclick="redirigir('test tema 1 CE+/index.html')">TEMA 1</div>
+
+  <div class="book" onclick="redirigir('test tema 2 IHUALDAD/index.html')">TEMA 2</div>
+
+  <div class="book" onclick="redirigir('test tema 3 GOBIERNO Y ADMIN+/index.html')">TEMA 3</div>
+
+  <div class="book" onclick="redirigir('test tema 4 ORGANIZACION/index.html')">TEMA 4</div>
+
+  <div class="book" onclick="redirigir('test tema 5 UNION EU/index.html')">TEMA 5</div>
+
+  <div class="book" onclick="redirigir('test tema 6 PODER JUDICIAL/index.html')">TEMA 6</div>
+
+  <div class="book" onclick="redirigir('test tema 7 TSJ AN TS/index.html')">TEMA 7 - TSJ Y TS</div>
+
+  <div class="book" onclick="redirigir('test tema 8 JUZGADOS/index.html')">TEMA 8 - JUZGADOS</div>
+
+  <div class="book" onclick="redirigir('test tema 9 DERECHOS DE LA CARTA/index.html')">TEMA 9</div>
+
+  <div class="book" onclick="redirigir('test tema 10 OFICINA JUDICIAL/index.html')">TEMA 10</div>
+
+  <div class="book" onclick="redirigir('test tema 11 EL LETRADO/index.html')">TEMA 11</div>
+
+  <div class="book">TEMA 12</div>
+
+  <div class="book" onclick="redirigir('test tema 13 CUERPOS GENERALES 2/index.html')">TEMA 13</div>
+
+  <div class="book" onclick="redirigir('test tema 14 CUERPOS GENERALES+/index.html')">TEMA 14</div>
+
+  <div class="book" onclick="redirigir('test tema 15 LIBERTAD SINDICAL/index.html')">TEMA 15</div>
+
+  <div class="book" onclick="redirigir('test tema 16 juicio ordinario o verbal/index.html')">TEMA 16</div>
+
+  <div class="book">TEMA 17</div>
+  <div class="book">TEMA 18</div>
+  <div class="book">TEMA 19</div>
+
+  <div class="book" onclick="redirigir('test tema 20/index.html')">TEMA 20 - LECRIM</div>
+
+  <div class="book" onclick="redirigir('test tema 21 DELITO LEVE/index.html')">TEMA 21</div>
+
+  <div class="book">TEMA 22</div>
+  <div class="book">TEMA 23</div>
+  <div class="book">TEMA 24</div>
+  <div class="book">TEMA 25</div>
+  <div class="book">TEMA 26</div>
+  <div class="book">TEMA 27</div>
+
+  <div class="book" onclick="redirigir('test tema 28 lec+/index.html')">TEMA 28</div>
+
+  <div class="book">TEMA 29</div>
+  <div class="book">TEMA 30</div>
+  <div class="book">TEMA 31</div>
+
+</div>
+
+<script>
+function redirigir(ruta) {
+  window.location.href = ruta;
+}
+</script>
+
+<footer>
+  &copy; 2025 Moises | moises-test · Todos los derechos reservados
+</footer>
+
+</body>
+</html>

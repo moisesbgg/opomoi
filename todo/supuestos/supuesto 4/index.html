@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supuesto 1</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - CUARTO CASO- <br>
+      D. Jose Rodriguez, domiciliado en la coruña en la vivienda propiedad de su hija, es propietario de un apartamento sito en madrid donde reside 
+      esporadicamente junto a su esposa, con la que esta casado en regimen de gananciales y de la que no esta separado legalmente. D. Jose a contraido una deuda 
+      de un contrato que se celebro en la coruña con la mepresa el Pescaito SL y adeuda una fecha de 2019, una cantidad de 12000 eu. la empresa interpuso demanda contra 
+      D. jose y se a dictado sentencia firme de condena de pago de 12000 eu mas intereses y costas el 15 de mayo de 20221 eu. por el juzgado de 1 instancia numero 18 de la coruña. 
+      no habiendo sido abonada por el demandado el importe, la empresa demandante presenta demanda ejecutiva reclamando el importe de 12000 eu mas intereses y costas
+    </div>
+    <div class="container">
+      <h1>supuesto 1</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

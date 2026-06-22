@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temas Auxilio Judicial</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-image: url('f.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  color: gold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 35px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.book {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.book:hover {
+  transform: scale(1.05);
+  border-color: gold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Temas Auxilio Judicial</h1>
+  <p style="color:#aaa;">Pulsa un tema para escribir tus apuntes</p>
+</header>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const grid = document.getElementById("grid");
+
+for (let i = 1; i <= 31; i++) {
+  const a = document.createElement("a");
+  a.className = "book";
+  a.href = `editor.html?tema=${i}`;
+  a.textContent = "Tema " + i;
+  grid.appendChild(a);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LECRIM</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - LECRIM- <br>
+    el dia 15 de junio de 2005 , sobre las  12 horas , cuando se estaba disputando un partido de futbol en el campo del Romeral en la localidad de Sevilla la Nueva en Madrid, del pàrtido judicial de Navalcarnero, entre los equipos CD Sevilla la Nueva y el deportivo de Navalcarnero , Beltran Garcia Muñoz , mayor de edad y sin antecedentes 
+    penales , perteneciente al primero de los equipos , hizo una entrada al jugador del equipo contrario , Antonio Urquijo Alcala , de 25 años de edad , cayendo por ello este ultimo al suelo , el cual consiguio levantarse , pese a intentar Beltran que no lo hiciera para que no pudiera continuar con la jugada ; dandole Antonio a Beltran alguna patada
+    . Acto seguido y , cuando ya no estaba Antonio en posesion del balon , Beltran inapropiadamente le dio un fuerte codazo en el ojo derecho , causandole un traumatismo ocular , lo que provoco que el jugador fuera expulsado por esta accion y suspendido el partido. Testigos de los hechos , ademas de los integrantes de los dos equipos fue al arbitro Raul Garcia 
+  al haber observado los hechos a pocos metros de distancia . Antonio fue atendido de urgencias en el centro de salid de Mostoles , emitiendo el parte de lesiones correspondiente y como consecuencia de los hechos , Antonio perdio un 35% de vision en el ojo derecho , lesiones que para su curacion precisaron , ademas de una primera asistencia facultativa , tratamiento 
+  quirurgico . Como consecuencia de estos hechos , Antonio tuvo unos gastos medicos cuyo importe exacto ascendio a 45.500 eu por las ontervenciones, 1.250 eu por sesiones de terapia natural y de realizacion de un TAC. Beltran Garcia es propietario de un vehiculo turismo, un piso , como titular de una cuenta corriente bancaria y percibe un sueldo procedente de su actividad profesional
+  . El fallo de la sentencia es del siguiente tenor literal . Se condena a Beltran Garcia Muñoz , como autor penalmente responsable de un delito de LESIONES del ar 147,1 del CP , ya definido , sin la concurrencia de circunstancias modificadoras de la responsabilidad criminal , a las penas de UN AÑO DE PRISION, e inhabilitacion especial para el derecho de sufragio pasivo durante el tiempo
+  de la condena . Asi mismo , indemnizara a Antonio Urgido en la cantidad de 8100 eu por todos los dias que tardo en alcanzar la sanidad , en 1250 eu por los gastos acreditativos , asi como los 45000 eu por los tratamientos medicos y 20000eu por secuelas , con los intereses legales y al abono de las costas causadas , incluidas de la acusacion particular 
+    </div>
+    <div class="container">
+      <h1>supuesto 7</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

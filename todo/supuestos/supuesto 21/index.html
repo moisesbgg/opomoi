@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auxilio 2024</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      -  segundo 2024- <br>
+    El procurador de los tribunales D. Juan Perez, actuando en nombre y representante de D. Jordi Planas , el 1 de enero de 2023 formula demanda de juicio verbal de deshaucio por falta de pago de las rentas contra D. Albert Guardiola, en relacion a la vivienda sita en la calle Tetuan Nº1  4º derecha de Granollers(Barcelona).
+    en el escrito de demanda la parte actora hizo constar que cada mensualidad de renta asciende a 600 eu, que el demandado , en el momento de presentar la demanda, adeuda 6 mensualidades atrasadas y que el valor catastral de la finca arrendada asciendea 1500000 eu.
+    en la demanda se acumularon la accion de reclamacion de rentas y la accion de deshaucio de finca urbana por falta de pago de renta y se hacia constar que la finca es vivienda habitual del arrendatario .
+    tambien , que no concurrian circunstancias que impidiesen al arrendatario enervar la accion de deshaucio y que se tenga por solicitado la ejecucion del lanzamiento en la fecha y hora que se fije por el juzgado a los efectos señalados en el apartado 3 del ar 549 de la lec
+    </div>
+    <div class="container">
+      <h1>Auxilio 2024</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supuesto 8</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - REQUERIMIENTO PAGO- <br>
+    Don Marcelino Garcia con domicilio en la calle comercio n25 , 2 derecha , del municipio de mejora del campo (municipio perteneciente partido judicial de coslada, ubicada en la provincia de Madrid) ha sido requerido a instancia de Doña 
+    Monica Benaste, con domicilio en sito en la calle Cordero n9 de Coslada , para acudir al acto de conciliacion que ella ha instado<br>
+    con este acto ella intenta llegar a un acuerdo para que el le devuelva 3500eu que le presto para realizar una reforma en su vivienda y aun no le a sido devuelto 
+    </div>
+    <div class="container">
+      <h1>supuesto 8</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

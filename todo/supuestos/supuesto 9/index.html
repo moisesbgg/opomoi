@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>impago de comunidad</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - COMUNIDAD DE PROPIETARIOS- <br>
+    D. Pedro Valgañon, presidente de la comunidad de propietarios de la calle Serrano n 1-3 de Madrid presenta a traves de la sede electronica , escrito de oeticion de procedimiento monotorio frente a Sra Sadra Villarreal , propietaria del inmueble sito en la calle Serrano n1 piso 4 a de Madrid , sedignado este domicilio de la parte deudaora a efecto de notificaciones, en reclamacion de cantidades por el importe de 7950 eu de impago de las cuotas de comunidad de los meses de enero de 2023 a noviembre de 2023
+    . Como consecuencia del impago , la junta de propietarios de la comunidad aprobo , en junta general celebrada el 1 de dicciembre de 2023, la liquidacion de la deuda pendiente de pàgo por parte de la Sra. Villarreal, expedida por el secretario de la comunidad , autorizando la formulacion de la reclamacion , con el visto bueno del presidente, documento que se acompañe a la peticion 
+    . Se intento notificar a la Sra el importe de la deuda pendiente mediante burofax, pero el resultado fue negativo por lo que ante esta circunstancia se efectuo la publicacion de la misma en el tablon de anuncios del inmueble , adjuntandose a la documentacion acreditada de este extremo . los gastos generados por el requerimiento de pago ascendieron a 50 eu
+    </div>
+    <div class="container">
+      <h1>impago de comunidad</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

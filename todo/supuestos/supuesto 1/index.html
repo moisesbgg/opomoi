@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supuesto 1</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - PRIMER CASO- <br>
+      Antonio, domiciliado en Sevilla, tiene una casa arrendada a Luis, sita en
+      la calle de la Poza 5, de Toledo, el contrato se celebro el 10 de febrero
+      de 2014, la renta acordada fue de 500 euros al mes. actualmente la renta
+      asciende a 540 . Luis no paga desde 2019 y adeuda una renta de 12 meses y
+      el consumo de agua ascendeindo la deuda de 6785 euros. antonio a decidico
+      no renovarle el contrato y le a remitido un butofax comunicando su
+      decision. Luis no a contestado al burofax.
+    </div>
+    <div class="container">
+      <h1>supuesto 1</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

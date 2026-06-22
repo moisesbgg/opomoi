@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test de Oposiciones</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        color: #fb853c;
+      }
+      /* Estilo del video */
+      #video-fondo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color: #fd883f;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+      }
+
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      .card {
+        background: rgb(4, 141, 245);
+        border-radius: 16px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+      }
+
+      .cards {
+        background: rgb(218, 10, 10);
+        border-radius: 16px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(227, 231, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+      }
+      .cards:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 30px rgba(247, 178, 2, 0.2);
+      }
+
+      .cards i {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #f7797d;
+      }
+
+      .cards h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #fdae04;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .card i {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #f7797d;
+      }
+
+      .card h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #ffde06;
+      }
+      .cardsn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      .cardsn {
+        background: rgb(26, 138, 3);
+        border-radius: 16px;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(227, 231, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+      }
+      .cardsn:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 30px rgba(247, 178, 2, 0.2);
+      }
+
+      .cardsn i {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #f7797d;
+      }
+
+      .cardsn h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #fdae04;
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4" />
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    <hr />
+    <h1>supuestos lec</h1>
+    <hr />
+    <div>
+      <div class="cards-container">
+        <div class="card" onclick="location.href='supuesto 1/index.html'">
+          <i class="fas fa-brain"></i>
+          <h3>1. IMPAGO RENTA</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 2/index.html'">
+          <i class="fas fa-balance-scale"></i>
+          <h3>2. DENUNCIA</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 3/index.html'">
+          <i class="fas fa-user-shield"></i>
+          <h3>3. NO JUDICIAL</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 4/index.html'">
+          <i class="fas fa-fire-extinguisher"></i>
+          <h3>4. EDMANDA MATRIMONIAL</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 5/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>5. IMPAGO RENTA</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 6/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>6. IMPAGO COMUNIDAD</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 7/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>7. HERENCIA</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 8/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>PRESTAMO VIVIENDA</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 9/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>IMAGO COMUNIDAD</h3>
+        </div>
+
+        <div class="card" onclick="location.href='supuesto 11/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>supuesto 11</h3>
+        </div>
+        <div class="card" onclick="location.href='supuesto 12/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>supuesto 12</h3>
+        </div>
+        <div class="card" onclick="location.href='supuesto 13/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>supuesto 13</h3>
+        </div>
+        <div class="card" onclick="location.href='supuesto 14/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>supuesto 14</h3>
+        </div>
+        <div class="card" onclick="location.href='supuesto 15/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>supuesto 15</h3>
+        </div>
+        <div class="card" onclick="location.href='supuesto 16/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>supuesto 16</h3>
+        </div>
+        <div class="card" onclick="location.href='supuesto 17/index.html'">
+          <i class="fas fa-user-nurse"></i>
+          <h3>supuesto 17</h3>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <h1>supuestos lecrim</h1>
+      <hr />
+      <br />
+      <div>
+        <div class="cards-container">
+          <div class="cards" onclick="location.href='supuesto 18/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>DROGADICTOS</h3>
+          </div>
+          <div class="cards" onclick="location.href='supuesto 19/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>CODAZO FUTBOL</h3>
+          </div>
+          <div class="cards" onclick="location.href='supuesto 20/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>BATMAN.PA</h3>
+          </div>
+          <div class="cards" onclick="location.href='supuesto 21/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>CUARTO LECRIM</h3>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+      <h1>DELITOS LEVES</h1>
+      <hr />
+      <br />
+      <div>
+        <div class="cardsn-container">
+          <div class="cardsn" onclick="location.href='supuesto 22/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>DISCUSION EX</h3>
+          </div>
+
+          <div class="cardsn" onclick="location.href='supuesto 23/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>AMENAZAS DIVORCIO</h3>
+          </div>
+
+          <div class="cardsn" onclick="location.href='supuesto 24/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>ROBO DE MOVIL</h3>
+          </div>
+
+          <div class="cardsn" onclick="location.href='supuesto 25/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>LEVE</h3>
+          </div>
+        </div>
+
+        <br />
+        <hr />
+        <h1>DELITOS SOCIAL  </h1>
+        <hr />
+        <br />
+
+        <div class="cardsn-container">
+          <div class="cardsn" onclick="location.href='supuesto 26/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>SOCIAL 1</h3>
+          </div>
+
+<div class="cardsn" onclick="location.href='supuesto 27/index.html'">
+            <i class="fas fa-user-nurse"></i>
+            <h3>SOCIAL 2</h3>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

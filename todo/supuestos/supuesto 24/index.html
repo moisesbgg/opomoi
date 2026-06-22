@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROBO MOVIL</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      -ROBO MOVIL - <br>
+   En causa seguida por el procedimiento para el enjuiciamiento rapido de determinados delitos , derivados de atestado policial , valorado y practicado prueba en el acto del juicio oral, resultando probados los siguientes hechos:
+   Los acusados Antonia G. P. y Rafael G. S. , puestos de comun acuerdo en la accion y en el proposito de obener un ¡licito entiquecimiento patrimonial a costa de lo ajeno , sobre las 18:45 horas del dia 25 de mayo de 2017, yendo a bordo del convoy de la linea 1 del 
+   ferrocarril matropolitano de Madrid , a su llegada a la parada de Sol, se apoderaron del telefono movil propiedad del turista italiano Alessandro P. , marca Samsung modelo Galaxy, tasado pericialmente en la cantidad de 800 eu , aprovezhando el momento en que el citado turista descendia del vagon , 
+   mientras que la acusada Antonia dificultaba con un movimiento obstativo que el turista pudiera descender del vagon con la normalidad , el acusado Rafael se apoderaba del telefono . Instantes despues ambos acusados abandonaron el vagon , siendo detenidos por los agentes de CNP, quienes ocuparon el telefono 
+   que habia sido tirado al suelo por el acusado Rafael y procedieron a entregarlo en calidad de deposito provisional a su propuetario 
+   Los hechos declarados probados son constitutivos de un delito de hurto en grado de tentativa del ar 234.1º, 16 y 62 del codigo penal
+   </div>
+    <div class="container">
+      <h1>Auxilio 2024</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

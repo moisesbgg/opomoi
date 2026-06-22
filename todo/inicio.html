@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moises-test | Inicio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0e0e0e;
+        color: #ffffff;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      a {
+        color: #d4af37;
+        text-decoration: none;
+      }
+
+      nav {
+        background-color: #0e0e0e;
+        padding: 1rem 2rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        border-bottom: 1px solid #1a1a1a;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      nav ul li a {
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #ffffff;
+      }
+
+      header {
+        padding: 6rem 2rem 4rem;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        color: #d4af37;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #ccc;
+      }
+
+      section {
+        padding: 4rem 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      section h2 {
+        color: #d4af37;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 0.5rem;
+      }
+
+      section p {
+        font-size: 1.1rem;
+        color: #e0e0e0;
+      }
+       video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Escala el video para cubrir toda la pantalla */
+        z-index: -1; /* Lo pone detrás del contenido */
+      }
+
+      .section-box {
+        background-color: #1a1a1a;
+        padding: 2rem;
+        border-radius: 8px;
+        margin-top: 1.5rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        background-color: #0e0e0e;
+        color: #888;
+        font-size: 0.9rem;
+        border-top: 1px solid #222;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        header h1 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <video id="video-fondo" autoplay muted loop>
+    <source src="p.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="temas\temas.html">Temas</a></li>
+        <li><a href="test\test.html">Test </a></li>
+        <li><a href="#resumenes">Resúmenes</a></li>
+        <li><a href="supuestos\home.html">Supuestos</a></li>
+      </ul>
+    </nav>
+
+    <section id="temas">
+      <h2>Temas</h2>
+      <div class="section-box">
+        <p>
+          Practica test específicos por cada tema del temario oficial. Ideal
+          para reforzar conceptos individualmente y avanzar de forma
+          estructurada.
+        </p>
+        <p><a href="temas/temas.html">Acceder a los test por temas →</a></p>
+      </div>
+    </section>
+
+    <section id="examen">
+      <h2>Test</h2>
+      <div class="section-box">
+        <p>
+          Simulacros completos con temporizador, puntuación y dificultad
+          realista. Prepárate como si fuera el día del examen.
+        </p>
+        <p><a href="test/test.html">Ir a simulacros de examen →</a></p>
+      </div>
+    </section>
+
+    <section id="resumenes">
+      <h2>Resúmenes</h2>
+      <div class="section-box">
+        <p>
+          Accede a resúmenes claros y directos de cada tema, para repasar rápido
+          o consolidar conocimientos clave.
+        </p>
+        <p><a href="#">Ver resúmenes →</a></p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 Moises | moises-test · Todos los derechos reservados
+    </footer>
+  </body>
+</html>

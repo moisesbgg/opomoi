@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editor de Tema</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0e0e0e;
+  color: white;
+}
+
+header {
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  color: gold;
+}
+
+textarea {
+  width: 95%;
+  height: 75vh;
+  margin: 10px auto;
+  display: block;
+  background: #1a1a1a;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  resize: none;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background: gold;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 id="titulo">Tema</h1>
+  <a href="index.html">⬅ Volver</a>
+</header>
+
+<textarea id="texto" placeholder="Escribe aquí tus apuntes..."></textarea>
+
+<div class="buttons">
+  <button onclick="guardar()">💾 Guardar</button>
+  <button onclick="borrar()">🗑 Borrar</button>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const tema = params.get("tema");
+
+document.getElementById("titulo").innerText = "Tema " + tema;
+
+const textarea = document.getElementById("texto");
+
+// cargar
+textarea.value = localStorage.getItem("tema_" + tema) || "";
+
+// guardar automático al escribir
+textarea.addEventListener("input", () => {
+  localStorage.setItem("tema_" + tema, textarea.value);
+});
+
+function guardar() {
+  localStorage.setItem("tema_" + tema, textarea.value);
+  alert("Guardado ✔");
+}
+
+function borrar() {
+  if (confirm("¿Borrar este tema?")) {
+    localStorage.removeItem("tema_" + tema);
+    textarea.value = "";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LECRIM</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - 10 PRACTICO- <br>
+    por fin eres tramitador procesal y tu primer destino es en el juzgado de lo penal 10 de malaga , a los pocos dias de estar en tu mesa , un viernes a las 9 de la mañána el juzgado de guardia de detenidos te informa de que la policia ha detenido a un requisitoriado de tu 
+    procedencia abreviado 27/2018, el cual habia sido puesto en busca y captura por no haber comparecido en el juicio a pesar de estar correctamente citado y sin haberse podido celebrar en su ausencia por ser la pena superior a 2 años privativa de libertad
+    </div>
+    <div class="container">
+      <h1>supuesto 7</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

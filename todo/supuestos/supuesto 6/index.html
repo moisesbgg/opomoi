@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supuesto 6</title>
+    <link rel="stylesheet" href="yo.css" />
+  </head>
+  <body>
+    <video id="video-fondo" autoplay muted loop>
+      <source src="bbb.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  
+
+
+
+
+    <div class="enunciado-fijo">
+      - SEXTO CASO- <br>
+    Antonio Gomez Gonzalez y Asuncion Perez Fernandez , casados en regimen de bienes y residentes en la calle Olmo de Madrid, adquirieron , por contrato 
+    privado de compraventa, el piso 2B de la calle Fuensanta n21 de Navalcarnero, siendo el vendedor y titular registral Fernando Berrocal Ramirez, vecino 
+     de Pozuelo <br>
+     Pasado el tiempo sin pagar las cuotas de la comunidad del piso de nueva adquisicion . la comunidad de propietarios del inmueble de la calle fuensanta n21 de 
+     Navalcarnero , remitio un requerimiento notarial a los deudores , cuyo coste ascendio a 350eu , reclamando la deuda. Ante la falta de contestacion al requerimiento 
+     deciden en la junta de propietarios , por mayoria de 3/5 iniciar acciones juduciales contra los propietarios del 2b por las cuotas de comunidad inpagadas que asciende 
+     a 5850eu, presentado al efecto demanda de juicio monitorio<br>
+     Posteriormente, obtenido el titulo judicial que lleva aparejada ejecucion, la comunidad del inmueble de la calle fuensanta n21 de Navalcarnero, solicita el despaho de ejecucion 
+     frente a los deudores
+    </div>
+    <div class="container">
+      <h1>supuesto 5</h1>
+      <div id="pregunta"></div>
+      <div id="opciones"></div>
+      <button id="siguiente" onclick="siguientePregunta()" disabled>
+        ➡ Siguiente
+      </button>
+      <div class="contador">
+        Aciertos: <span id="aciertos" class="aciertos">0</span><br>
+        Fallos: <span id="fallos" class="fallos">0</span>
+      </div>
+      <div class="registro" id="registro">
+        <!-- Aquí se agregará el historial -->
+      </div>
+    </div>
+    </div>
+    <button type="button" onclick="location.reload();">Reiniciar Test</button>
+    <script src="test.js"></script>
+    
+  </body>
+</html>

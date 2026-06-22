@@ -1,0 +1,165 @@
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.637);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+#pregunta {
+  font-size: 35px;
+  margin-bottom: 23px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.correcta {
+  background-color: rgb(26, 203, 26);
+}
+
+.incorrecta {
+  background-color: rgb(234, 49, 49);
+}
+
+#siguiente {
+  background-color: #ece10f;
+  color: rgb(106, 104, 104);
+  display: none;
+}
+
+.enunciado-fijo {
+  position: fixed;
+  font-size: 25px;
+  top: 0;
+  left: 0;
+  width: 25vw; /* máximo 1/4 del ancho de pantalla */
+  height: 50vh;
+  background-color: #ffffff95; /* fondo blanco */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* leve sombra para separar visualmente */
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* permite scroll interno si el contenido crece */
+  z-index: 999; /* se mantiene encima de otros elementos */
+}
+.contador {
+  font-size: 24px;
+  text-align: center;
+}
+.aciertos {
+  background-color: #e0ffe0;
+  border: 2px solid green;
+}
+.fallos {
+  background-color: #ffe0e0;
+  border: 2px solid red;
+}
+.botones button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.panel-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25vw;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.contenido {
+  margin-left: 26vw;
+  padding: 20px;
+}
+
+.contador {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.aciertos {
+  color: green;
+}
+.fallos {
+  color: red;
+}
+
+.opcion {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.opcion:hover {
+  background-color: #eee;
+}
+
+.correcta {
+  background-color: #c8f7c5 !important; /* verde */
+  border-color: green;
+}
+
+.incorrecta {
+  background-color: #f7c5c5 !important; /* rojo */
+  border-color: red;
+}
+
+.registro p {
+  margin: 4px 0;
+}
+
+button {
+  margin-top: 20px;
+}
+.contenido {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 2rem;
+}
+
+/* Estilo del video */
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
