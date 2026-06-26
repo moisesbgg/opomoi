@@ -162,4 +162,65 @@ button {
   z-index: -1;
 }
 
+.bocadillo {
+  width: 500px;
+  background: rgba(226, 73, 73, 0.95);
+  color: white;
 
+  display: none; /* 👈 no existe hasta fallo */
+
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  animation: entrar 0.3s ease;
+  animation: entrar 2s ease; /* antes 0.3s */
+}
+
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bocadillo::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #222 transparent transparent;
+}
+
+.panel-acierto {
+  width: 500px;
+  background: rgba(0, 120, 0, 0.9);
+  color: white;
+
+  display: none; /* 👈 CLAVE: oculto total */
+
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  animation: entrar 0,5s ease;
+  animation: entrar 2s ease; /* antes 0.3s */
+}

@@ -200,6 +200,7 @@ const preguntas = [
         opciones: ["a. sera declarado por el gobierno mediante decreto acordado con el consejo de ministros por un plazo maximo de 15 dias, dando cuenta al congreso de los diputados, reuniendo inmediatamente al efecto y sin cuya autorizacion no podra ser prorrogado dicho plazo", "b. sera declarado por el gobierno mediante decreto acordado en consejo de ministros, previa autorizacion del consejo de los diputados", "c. se declara por la mayoria absoluta del congreso de los diputados a propuesta del gobierno", "d. todas falsas"],
         correcta: 1
     },
+
 ];
 
 let preguntaActual = 0;
@@ -255,6 +256,8 @@ function verificarRespuesta(indiceSeleccionado) {
     aciertos++;
     document.getElementById('aciertos').textContent = aciertos;
     document.getElementById("manita").textContent = '👍';
+    mostrarPanelAcierto("✅ BIEN TONTO , BIEN .. ASI ME GUSTA COMO YO TE E ENSEÑAAAOOO 💪");
+    
 
     agregarRegistro(`Pregunta ${preguntaActual + 1}: ✅ Acierto`, 'aciertos');
 
@@ -267,6 +270,7 @@ function verificarRespuesta(indiceSeleccionado) {
     fallos++;
     document.getElementById('fallos').textContent = fallos;
     document.getElementById("manita").textContent = '👎';
+    mostrarBocadillo("💡 MONGOLO   ESTUDIA .. PO NO SABES QUE ESA NO ES ... CAPUYO ESTE ....💪");
 
     agregarRegistro(`Pregunta ${preguntaActual + 1}: ❌ Fallo`, 'fallos');
 
@@ -292,7 +296,33 @@ function agregarRegistro(texto, clase) {
   p.textContent = texto;
   p.className = clase;
   registro.appendChild(p);
+
+
+}
+function mostrarPanelAcierto(texto) {
+  const panel = document.getElementById("panel-acierto");
+
+  panel.textContent = texto;
+  panel.style.display = "flex";
+
+  clearTimeout(panel.timeout);
+
+  panel.timeout = setTimeout(() => {
+    panel.style.display = "none";
+  }, 1500);
 }
 
+ function mostrarBocadillo(texto) {
+  const b = document.getElementById("bocadillo");
+
+  b.textContent = texto;
+  b.style.display = "block";
+
+  clearTimeout(b.timeout);
+
+  b.timeout = setTimeout(() => {
+    b.style.display = "none";
+  }, 2000);
+}
 // iniciar
 cargarPregunta();

@@ -36,7 +36,7 @@ button:hover {
 }
 
 .correcta {
-  background-color: rgb(54, 209, 191);
+  background-color: rgb(26, 203, 26);
 }
 
 .incorrecta {
@@ -70,7 +70,7 @@ button:hover {
 }
 .aciertos {
   background-color: #e0ffe0;
-  border: 2px solid rgb(27, 173, 146);
+  border: 2px solid green;
 }
 .fallos {
   background-color: #ffe0e0;
@@ -106,7 +106,7 @@ button:hover {
 }
 
 .aciertos {
-  color: rgb(19, 174, 185);
+  color: green;
 }
 .fallos {
   color: red;
@@ -127,7 +127,7 @@ button:hover {
 
 .correcta {
   background-color: #c8f7c5 !important; /* verde */
-  border-color: rgb(28, 207, 195);
+  border-color: green;
 }
 
 .incorrecta {
@@ -160,4 +160,67 @@ button {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.bocadillo {
+  width: 500px;
+  background: rgba(226, 73, 73, 0.95);
+  color: white;
+
+  display: none; /* 👈 no existe hasta fallo */
+
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  animation: entrar 0.3s ease;
+  animation: entrar 2s ease; /* antes 0.3s */
+}
+
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bocadillo::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #222 transparent transparent;
+}
+
+.panel-acierto {
+  width: 500px;
+  background: rgba(0, 120, 0, 0.9);
+  color: white;
+
+  display: none; /* 👈 CLAVE: oculto total */
+
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  animation: entrar 0,5s ease;
+  animation: entrar 2s ease; /* antes 0.3s */
 }
