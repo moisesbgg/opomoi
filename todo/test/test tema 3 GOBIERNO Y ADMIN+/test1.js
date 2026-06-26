@@ -3,27 +3,33 @@ const preguntas = [
         pregunta: "1. (EXAMEN) coresponde al consejo de ministros como organo colegiado de gobierno ",
         opciones: ["a. declarar el estado de sitio", "b. crear, modificar y suprimir por RD los departamentos ministeriales ", "c. resolver los conflictos de atrubucones que puedan surgir entre los diferentes ministerios", "d. acordar la negociacion y firma de tratados internacionales"],
         correcta: 3
-    },{
+    },
+    {
         pregunta: "2. ar 1 los miembros de gobierno se reunen en",
         opciones: ["a. el consejo de gobierno y sesiones extraordinarias", "b. consejo de ministros, previa convocatoria del presidente", "c. consejo de gobierno y plenos extraordinarios", "d. consejo de ministros y comisiones delegadas del gobierno"],
         correcta: 3
-    },{
+    }
+    ,{
         pregunta: "3. ar 13 en referencia a la suplencia de los ministros, diga la falsa ",
         opciones: ["a. se podra realizar para el despacho ordinario de los asuntos se su competencia", "b. la suplencia de los ministros sera determinada pr RD del consejo de ministros", "c. recae, en todo caso, en otro miembro de gobierno", "d. el RD de suplencia expresara la causa y caracter de la suplencia "],
         correcta: 1
-    },{
+    },
+    {
         pregunta: "4. ar 18 quien convoca las reuniones del consejo de ministros",
         opciones: ["a. el ministro de la presidencia", "b. el rey", "c. el presidente del gobierno", "d. el miembro de gobierno que asume la presidencia del consejo de ministros"],
         correcta: 2
-    },{
+    },
+    {
         pregunta: "5. ar 5 diga la falsa. es funcion del consejo de ministros",
         opciones: ["a. disponer la emision de la deuda publica", "b. adoptar programas, planes y directrices vinculantes para todos los organos de la administracion de general del estado", "c. contraer credito, cuando haya sido autorizado por ley", "d. crear, modificar y suprimir los organos superiores de los departamentos ministeriales"],
         correcta: 3
-    },{
+    },
+    {
         pregunta: "6. ar 6 la creacion, modificacion y suspension de las comisiones delegadas del gobierno sera acordada por ",
         opciones: ["a. el consejo de ministros mediante RD a propuesta del presidente del gobierno", "b. el presidente del gobierno mediante orden a propuesta del consejo de ministro ", "c. el presidente del gobienro mediante RD a propuesta del consejo de ministro", "d. el consejo de ministro  mediante orden, a propuesta del presidente del gobienro"],
         correcta: 0
-    },{
+    },
+    {
         pregunta: "7. ar 6 ¿cual de las siguientes no es funcion de las comisiones delegadas del gobierno",
         opciones: ["a. resolver los asuntos que afecten a mas de un ministro y no quieran ser elevados al consejo de ministros", "b. ejercer cualquier otra atribucion que les delegue el consejo de ministros", "c. examinar cuestiones de caracter general, que tengan relacion con varios de los departamentos ministeriales que integren la comision", "d. estudiar aquellos asuntos que, afectando a varios ministerios, no requieran de la elavoracion de una propuesta conjunta previa"],
         correcta:3
@@ -201,8 +207,8 @@ const preguntas = [
         correcta: 1
     },
 
-];
 
+];
 let preguntaActual = 0;
 let aciertos = 0;
 let fallos = 0;
